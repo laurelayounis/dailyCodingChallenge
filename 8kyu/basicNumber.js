@@ -12,3 +12,4 @@ const equal3 = () => v1 * v5
 const equal4 = () => v4 / v5
 const equal5 = () => v2 % v4
 
+... 

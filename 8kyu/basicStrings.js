@@ -23,4 +23,3 @@ const answer3 = () => "yes"
 
 
 
-.charAt.apply.
