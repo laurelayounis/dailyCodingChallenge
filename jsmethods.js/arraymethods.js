@@ -37,7 +37,7 @@ splice(0, 0, "new") would add the string "new" to the beginning of an array, and
 
 
 
-/* Add / remove items */
+/* Add / remove items ************************************************************************************************/
 
 arr.push() // adds items to the end
 arr.pop() //  extracts an item from the end
@@ -107,3 +107,49 @@ alert(arr) // [1, 2, 3, 4, 5]   starting at index -1 (the end of the arr), remov
 
 
 
+
+
+
+/********Transform an array************************************************************* */
+
+.map()
+
+//syntax
+
+let result= arr.map(function(item, index, array){
+    //returns the new value of the item
+})
+
+
+//transform each element into its length
+
+let lengths= ['Bilbo', 'Gandalf', 'Nazgul'].map(item => item.length)
+
+alert(lengths) // [5, 7, 6]
+
+
+
+.sort()
+// sorts the array in place, changing its element order
+//returns the sorted array butthe returned value is usually ignored as the arr itself is modified
+
+let arr= [1, 2, 15]
+
+arr.sort(function(a,b) {return a - b})
+
+//written as arrow funciton
+
+arr.sort((a,b) => a - b)
+
+alert(arr) //1,2, 15
+
+
+
+.reverse()
+//reverses the order of the elements
+
+let arr= [1, 2, 3, 4, 5]
+
+arr.reverse()
+
+alert(arr) // [5, 4, 3, 2, 1]

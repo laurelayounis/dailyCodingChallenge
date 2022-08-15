@@ -21,3 +21,11 @@ function doubleChar(str) {
 
     return str.join('');
 }
+
+
+
+//alertnative solution
+
+const doubleChar = (str) => str.split("").map(c => c + c).join("")
+
+
