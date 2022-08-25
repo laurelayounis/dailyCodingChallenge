@@ -21,3 +21,10 @@ String.prototype.isUpperCase = function() {
   }
 
   //answer defining the string prototype
+
+
+  if(something happens){
+    something something
+  }else if (){
+    sme
+  }
