@@ -21,4 +21,4 @@ function defineSuit(card) {
     function defineSuit(card) {
         return {'♣': 'clubs', '♠': 'spades', '♦': 'diamonds', '♥': 'hearts'}[card.slice(-1)];
     }
-    ...
+    
