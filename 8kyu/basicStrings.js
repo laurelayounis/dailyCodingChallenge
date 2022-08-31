@@ -20,3 +20,7 @@ const answer1 = () => "no"
 const answer2 = () => "no"
 const answer3 = () => "yes"
 
+
+
+
+.charAt.apply.
