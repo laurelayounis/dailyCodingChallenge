@@ -605,5 +605,48 @@ alert(str) // Bilbo;Gandalf;Nazgul
 
 
 /* .reduce()
+//accumluator: the result of the previous function call, equals inital the first time(if its provided)
+//item: teh current arr item
+//index: is its position
+//array is the arr
+
     .reduceRight()
+    does the same as reduce() but starts in the opposite direction
 */
+
+/*when we need to iterate over an arr we can use : forEach(), for, or for..of
+When we need to iterate and return the data for each element we use: .map()
+.reduce() & .reduceRight() are used to calc a single value based on the arr
+*/
+
+let value= arr.reduce(function(accumulator, item, index, array){
+    //...
+},[inital])
+
+let arr= [1, 2, 3, 4, 5]
+let result= arr.reduce((sum, current)=> sum + current, 0)
+alert(result) //15
+
+
+/* Array.isArray()
+type of wont distinguish if something is an array so we use .isArray()
+
+it returns true if the value is an array and false otherwise
+*/
+
+alert(Array.isArray({})) //false
+alert(Array.isArray([]))//true
+
+
+//write the function camelize(str) that changes dash-seperated words like "my-short-string" into camel cased
+
+//examples
+camelize("background-color") == 'backgroundColor';
+camelize("list-style-image") == 'listStyleImage';
+camelize("-webkit-transition") == 'WebkitTransition'
+
+function camelize(str){
+    return str.split(' ')
+}
+
+
