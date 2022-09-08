@@ -571,4 +571,9 @@ alert( countries.sort( (a, b) => a.localeCompare(b) ) ) // Andorra, Osterreich, 
 /* .reverse()
 
 reverses the order of elements in an arr
+it also returns the arr after the reversal
 */
+
+let arr= [1, 2, 3, 4, 5]
+arr.reverse()
+alert(arr) //5, 4, 3, 2, 1
