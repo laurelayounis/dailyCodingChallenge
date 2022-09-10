@@ -577,3 +577,33 @@ it also returns the arr after the reversal
 let arr= [1, 2, 3, 4, 5]
 arr.reverse()
 alert(arr) //5, 4, 3, 2, 1
+
+
+/* .split()  .join
+.split() aso has an opt second arg, a limit on the arr length: if its provided then the extra elements are ignored
+this is rarely used in practice
+
+.join()
+does the reverse of split()
+it creates a string of arr items joined by the glues between them
+ */
+
+let names= 'Bilbo, Gandalf, Nazgul'
+let arr= names.split(', ')
+for (let name of arr){
+    alert(`A message to ${name}`) //a message to Bilbo (runs on all the other names & alerts the mess)
+}
+
+/*split into letters*/
+let str= "test"
+str.split('') // t, e, s, t
+
+/*join together*/
+let arr = ['Bilbo', 'Gandalf', 'Nazgul'];
+let str= arr.join(';') //glue the arr into a string using ;
+alert(str) // Bilbo;Gandalf;Nazgul
+
+
+/* .reduce()
+    .reduceRight()
+*/
