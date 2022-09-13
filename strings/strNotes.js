@@ -69,7 +69,7 @@ alert('Interface'[0].toLowerCase()) // i
 
 //indexOf()
 //looks for the substr in str, starting from the given position pos and returns the posiiton where the
-//match was foudn or -1 if nothing can be found
+//match was fouND or -1 if nothing can be found
 
 let searchingThestr= 'Widget with id'
 alert( searchingThestr.indexOf('Widget') ) // 0    because 'Widget' is found starting at index 0
