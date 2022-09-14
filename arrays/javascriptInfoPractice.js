@@ -71,3 +71,32 @@ let arr = [5, 2, 1, -10, 8];
 alert( arr ); // 8, 5, 2, 1, -10
 */
 
+
+function noBoringZeros(n){
+  let array= String(n.split(''))
+  while(array[array.length-1]== 0){
+    array.pop()
+  }
+  return Number(array.join(''))
+}
+
+
+function areYouPlayingBanjo(name){
+  if(name.startsWith('R') || (name.startsWith('x')){
+    return (name + ' plays banjo')
+  }else{
+    return name + ' does not play banjo'
+  }
+}
+
+/*
+summation
+write a program that finds the summation of everynumber from 1 to num. 
+*/
+var summation= function(num){
+  let sum= 0
+  for(let i= 0; i <= num; i++){
+    sum += i
+  }
+  return sum
+}
