@@ -29,13 +29,8 @@ need to be able to compare whether the string that's coming into the function ha
 */
 
 function isIsogram(str){
-    let arr= str.split('')
-    console.log(arr)
-    let set = new Set(arr)
-    let gotRidofDuplicates= [...set]
-     if( arr.length === gotRidofDuplicates.size || str === ''){
-       return true
-     }else{
-       return false
-     }
+
     }
+
+//Solution
+    const isIsogram= str => new Set(str.toLowerCase()).size == str.length
