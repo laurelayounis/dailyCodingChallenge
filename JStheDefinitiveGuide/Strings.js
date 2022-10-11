@@ -1,11 +1,64 @@
 //methods to obtain PORTIONS of a string:
 
-//substring()
+//substring()    
 //slice()
 //split()
 //substr
 
 //examples:
+
+let ex= "Hello, World"
+ex.substring(1,4) // 'ell'  the 2nd, 3rd, and 4th characters
+ex.slice(1,4)//'ell'        same thing
+ex.slice(-3) // rld         the last 3 characters
+ex.split(", ") // ["Hello", "World"] splits at delimiter string
+
+//methods to SEARCH a string:
+
+let ex2= "Hello, World"
+ex2.indexOf('l') // 2       the postion of the index of the first letter l
+ex2.indexOf('l', 3)// 3     the position of the index of the first l at or after index 3
+ex2.lastIndexOf('l')//10    the position of the index of the last letter l
+
+//BOOLEAN searching functions that return true or false
+
+let ex3= "Hello, World"
+ex3.startsWith("Hell")//true    the string starts with these letters
+ex3.endsWith('!')// false       the string does not end with that
+ex3.includes('or')//true        the string includes the substring 'or'
+
+//Create MODIFIED versions of a string
+let ex4= "Hello, World"
+ex4.replace("llo", "ya") // Heya, World     it replaced the substring we told it to replace in the first param with what we gave it for the seoncd para
+ex4.toLowerCase() // hello, world
+ex4.toUpperCase() // HELLO, WORLD
+
+//access individual Chacters of a string
+
+let ex5= "Hello, World"
+ex5.charAt(0) //'H'
+ex5.charAt(ex5.length -1) //'d'
+ex5.charCodeAt(0) // 72: 16 bit number at the specified position
+
+
+//Misc string methods
+"Hello World".concat("!") // Hello World!
+"H".repeat(5) // HHHHH
+
+//NOTE: strings are immutable methods olike replace() & toUpperCase() return new strings; they dont modify the string on which they're invoked
+        //strings can also be treated like read only arrays & you can access individual characters from a string using square brackets [] instead of charAt()
+        let s= "Hello World"
+        s[0] //'H'
+        s[s.length - 1] //'d'
+ 
+
+
+
+
+
+
+
+
 
 
 //*******    substring()
