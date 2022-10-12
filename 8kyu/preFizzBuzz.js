@@ -21,3 +21,14 @@ function preFizz(n) {
     }
     return output;
   }
+
+
+  //for loop version
+
+  function preFizz(n) {
+    var output = [];
+    for(var i = 0; i < n; i++){
+      output.push(i+1);
+    }
+    return output
+  }
