@@ -20,3 +20,5 @@ function removeDuplicateWords (s) {
     return uniqueWords
   }
   
+//one line
+  const removeDuplicateWords = s => [...new Set(s.split(' '))].join(' ')
