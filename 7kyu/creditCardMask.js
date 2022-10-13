@@ -32,3 +32,16 @@ function maskify(cc) {
   return cc.split('').map((letter, index) => index < cc.length - 4 ? '#' : letter).join('')
   }
   
+
+  //alt solution
+
+  // return masked string
+function maskify(cc) {
+    cc = cc.split("");
+    for(var i = 0; i < cc.length - 4; i++){
+      cc[i] = "#";
+  }
+  
+  cc = cc.join("");
+  return cc
+  }
