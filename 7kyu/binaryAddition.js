@@ -21,18 +21,16 @@ Examples:(Input1, Input2 --> Output (explanation)))
 //return the string
 
 
-
+solution:
+//sum inputs together 
+//use toString() // (2) in the toString() callback to get the radix which converts it to binary
 
 
 */
 
-function addBinary(n1, n2){
- let sum= n1 + n2 
- //convert the sum to binary
-
- //return this as a string
- return 
-}
+function addBinary(a,b) {
+    return (a + b).toString(2)
+    }
 
 
 console.log(addBinary(1, 1)) //2 => 10
