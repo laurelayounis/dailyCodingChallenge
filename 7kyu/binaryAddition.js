@@ -16,8 +16,8 @@ Examples:(Input1, Input2 --> Output (explanation)))
 // always whole positive nums
 //return the 2 params added together which is their sum, the sum is converted into binary needs to be returned as a string 
 //start out by adding the inputs togther to get the sum, 
-//take the sum convert it to binary 
-//convert the binary sum to a string
+//take the sum convert it to string
+//use the callback in the toString(2) to convert it to binary
 //return the string
 
 
