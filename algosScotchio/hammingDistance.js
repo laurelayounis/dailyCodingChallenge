@@ -15,6 +15,32 @@ Next, We would need to compare every character in the first string with the char
 Bear in mind that lowercase a will differ from it's uppercase character A, hence all our comparisons must be done in a common case.
 
 */
+/*
+
+Hamming Distance
+The Hamming distance between two strings of equal length is the number of positions at which the corresponding symbols are different.
+
+For example, consider the following strings −
+
+const str1 = 'delhi';
+const str2 = 'delph';
+The Hamming Distance of these strings is 2 because the fourth and the fifth characters of the strings are different. And obviously in order to calculate the Hamming Distance we need to have two strings of equal lengths.
+
+Therefore, we are required to write a JavaScript function that takes in two strings, let’s say str1 and str2, and returns their hamming distance.
+
+*/
+
+
+const str1 = 'delhi';
+const str2 = 'delph';
+const hammingDistance = (str1 = '', str2 = '') => {
+   if (str1.length !== str2.length) {
+      return 0;
+   }
+   let dist = 0;
+
+
+   //additional solution 
 
 function hammingDistance(stringA, stringB) {
     let result = 0
