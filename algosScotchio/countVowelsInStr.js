@@ -34,6 +34,5 @@ After looping through we return the counter which is equivalent to the number of
  }
 
 
- 
 
  
