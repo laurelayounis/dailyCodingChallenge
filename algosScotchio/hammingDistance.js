@@ -59,5 +59,3 @@ function hammingDistance(stringA, stringB) {
         throw new Error('Strings do not have equal length')
     }
 }
-
-
