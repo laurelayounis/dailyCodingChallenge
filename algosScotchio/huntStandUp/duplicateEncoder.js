@@ -19,3 +19,18 @@ function duplicateEncode(word){
   let wordArr= newWord.map((e,i,a) => a.indexOf(e) === a.lastIndexOf(e) ? '(' : ')')
   return wordArr.join('')
 }
+
+
+//looks better
+function duplicateEncode(word){
+  return word
+    .toLowerCase()
+    .split('')
+    .map( function (a, i, w) {
+      return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')'
+    })
+    .join('');
+}
+
+
+//above solutions are quadratic time so need to refactor using an obj map & saying if char count is greater than 1 return else return
