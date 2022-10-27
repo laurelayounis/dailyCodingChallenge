@@ -12,11 +12,10 @@ Examples
 
 
 function duplicateEncode(word){
-    //if char appears only once = )
-    //if char appears more than once= (
-    let newWord= word.toLowerCase().split('')
-  
-    let wordArr= newWord.map(w => word.indexOf(w) === word.lastIndexOf(w) ? '(' : ')')
-    return wordArr.join('')
-  }
-  
+  //if char appears only once = )
+  //if char appears more than once= (
+  let newWord= word.toLowerCase().split('')
+
+  let wordArr= newWord.map((e,i,a) => a.indexOf(e) === a.lastIndexOf(e) ? '(' : ')')
+  return wordArr.join('')
+}
