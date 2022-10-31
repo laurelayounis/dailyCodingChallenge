@@ -4,6 +4,7 @@ Write a function that checks if a given string (case insensitive) is a palindrom
 first need to normalize string by lowercasing it
 then need to create a new string to compare it to
 on the new string need to first lowercase it
+then split to turn it into an array so can use array methods on it
 
 */
 
