@@ -7,6 +7,7 @@ on the new string need to first lowercase it
 then split to turn it into an array so can use array methods on it
 then use the array method reverse to reverse the string
 then join it back together
+then compare the two strings
 
 */
 
